@@ -43,7 +43,7 @@ app.post('/api/payment', async (req, res) => {
 
 app.get('/', function (_, res) {
   app.use(express.static(path.resolve(__dirname, '../frontend', 'build')));
-  res.sendFile(patch.resolve(__dirname, '../frontend', 'build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '../frontend', 'build', 'index.html'));
 });
 
 // Create a Server
